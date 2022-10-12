@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus, input:hover, textarea:focus, textarea:hover {
+    border: 2px solid #d13d01;
+    outline: 2px solid #d13d01;
+}
+
+fieldset {
+    border: none
+}
+
+/* Header */
+
+.header {
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d13d01;
+    color: #FFF
+}
+
+.header h2 {
+    padding: 40px 0;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 45px;
+}
+
+.header ul li a {
+    color: #FFF;
+    letter-spacing: 1px
+}
+
+.header ul li {
+    font-size: 25px;
+    letter-spacing: 2px
+    cursor: pointer;
+}
+
+/* Seção info */
+
+.info-content {
+    display: flex;
+    margin: 5px;
+    background-color: #eb0052;
+    color: #FFF
+}
+
+.text-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box h3 {
+    font-size: 40px;
+}
+
+.text-box p {
+    font-size: 24px;
+}
+
+.img-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-box img {
+    width: 100%;
+    max-width: 500px;
+    margin: 15px 0;
+    border-radius: 20px;
+}
+
+/* Seção hospedagem */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 5px;
+    padding: 25px;
+    background-color: #9711a6;
+    color: #FFF
+}
+
+.main-content h2 {
+    font-size: 42px;
+    text-align: center;
+    margin: 30px 0
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-single {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-single img {
+    width: 250px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.container-single img:hover {
+    transform: scale(1.05)
+}
+
+.text-container-single h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+/* Seção contato */
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 30px;
+    background-color: #306bc7;
+    color: #FFF
+}
+
+.contact-content h2 {
+    font-size: 42px;
+    text-align: center;
+    margin: 30px 0
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 22px;
+}
+
+input {
+    width: 100%;
+    max-width: 800px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+textarea {
+    resize: none;
+    padding: 15px 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 12px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: transparent; 
+    border-radius: 12px;
+    border:3px solid #FFF;
+    cursor: pointer;
+}
+
+/* Seção sobre */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 30px;
+    background-color: #eb0052;
+    color: #FFF
+}
+
+.sobre h2 {
+    font-size: 42px;
+    text-align: center;
+    margin: 30px 0
+}
+
+.sobre div p {
+    font-size: 27px;
+    margin: 30px 0
+}
+
+.sobre div p:last-of-type {
+    font-size: 20px;
+    margin: 30px 0
+}
+
+/* Footer */
+
+.footer {
+    padding: 30px;
+    font-size: 25px;
+    color: #CCC;
+    background-color: #d13d01;
+    text-align: center;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1050px) {
+    .header {
+        justify-content: center
+    }
+
+    nav {
+        display: none
+    }
+
+    .info-content {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    
+    .text-box {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .img-box {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .img-box img {
+        width: 45%;
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 70px;
+    }
+    
+    .container-single {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
